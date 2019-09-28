@@ -6,7 +6,8 @@ namespace ConsoleChess
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ChessBoard chessBoard = new ChessBoard();
+            chessBoard.Show();
         }
     }
 }

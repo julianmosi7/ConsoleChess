@@ -8,7 +8,8 @@ namespace ConsoleChess
     {
         public void Show()
         {
-
+            ColorWriter greytogrey = new ColorWriter() { ForeGroundColor = ConsoleColor.Black, BackGroundColor = ConsoleColor.Gray };
+            greytogrey.Write("--------------------------------");
         }
     }
 }

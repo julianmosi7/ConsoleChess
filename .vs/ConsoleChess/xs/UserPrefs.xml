@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{300B86AD-07B8-4295-A51D-A2FC8E3E8DA2}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ConsoleChess/ChessBoard.cs">
+    <Files>
+      <File FileName="ConsoleChess/Bishop.cs" Line="20" Column="1" />
+      <File FileName="ConsoleChess/ChessPiece.cs" />
+      <File FileName="ConsoleChess/ColorWriter.cs" />
+      <File FileName="ConsoleChess/ChessBoard.cs" Line="11" Column="89" />
+      <File FileName="ConsoleChess/Program.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ConsoleChess" expanded="True">
+            <Node name="ConsoleChess" expanded="True">
+              <Node name="ChessBoard.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.ConsoleChess PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
