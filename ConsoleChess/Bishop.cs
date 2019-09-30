@@ -8,7 +8,7 @@ namespace ConsoleChess
     {
         public Bishop(bool IsWhite) : base(IsWhite)
         {
-            Term = "B";
+            Term = "L";
         }
         public override void CanMove(int xTo, int yTo)
         {

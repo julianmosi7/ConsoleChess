@@ -12,13 +12,19 @@ namespace ConsoleChess
             ChessBoard chessBoard = new ChessBoard();
             chessBoard.Show();
             for (int round = 1; player_won == false; round++)
-            {
-                //1. Zug weiß, 2. Zug black, 3. Zug weiß -> false  f|r  1. Zug weiß, 1. Zug black, 2. Zug weiß, ...                
+            {                           
                 color = color.Equals("black") ? "black" : "white";
                 move = ReadMove(round, color);
                 color = ChangeColor(color);
+                //first color
+                //andere klasse sonst implementierung zweimal
+                //mit liste vergleichen und schauen ob richtige color
+
                 move = ReadMove(round, color);                
                 color = ChangeColor(color);
+                //second color
+                //mit vorheriger class
+
             }
         }
 

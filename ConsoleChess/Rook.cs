@@ -8,7 +8,7 @@ namespace ConsoleChess
     {
         public Rook(bool IsWhite) : base(IsWhite)
         {
-            Term = "R";
+            Term = "T";
         }
 
         public override void CanMove(int xTo, int yTo)

@@ -8,7 +8,7 @@ namespace ConsoleChess
     {
         public Pawn(bool IsWhite) : base(IsWhite)
         {
-            Term = "P";
+            Term = "B";
         }
 
         public override void CanMove(int xTo, int yTo)

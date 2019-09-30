@@ -8,7 +8,7 @@ namespace ConsoleChess
     {
         public Knight(bool IsWhite) : base(IsWhite)
         {
-            Term = "K";
+            Term = "S";
         }
 
         public override void CanMove(int xTo, int yTo)
