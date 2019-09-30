@@ -1,18 +1,18 @@
 ﻿<Properties StartupConfiguration="{300B86AD-07B8-4295-A51D-A2FC8E3E8DA2}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ConsoleChess/ChessBoard.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ConsoleChess/Program.cs">
     <Files>
-      <File FileName="ConsoleChess/Bishop.cs" Line="20" Column="1" />
+      <File FileName="ConsoleChess/King.cs" Line="1" Column="1" />
+      <File FileName="ConsoleChess/Knight.cs" />
       <File FileName="ConsoleChess/ChessPiece.cs" />
-      <File FileName="ConsoleChess/ColorWriter.cs" />
-      <File FileName="ConsoleChess/ChessBoard.cs" Line="11" Column="89" />
-      <File FileName="ConsoleChess/Program.cs" />
+      <File FileName="ConsoleChess/ChessBoard.cs" />
+      <File FileName="ConsoleChess/Program.cs" Line="26" Column="33" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ConsoleChess" expanded="True">
             <Node name="ConsoleChess" expanded="True">
-              <Node name="ChessBoard.cs" selected="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
