@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/julianmosi/Dokumente/Schule/4.Klasse/POS/Projects/ConsoleChess/ConsoleChess/ConsoleChess.csproj": {}
+    "D:\\Schule\\4.Klasse\\POS\\Project2\\ConsoleChess\\ConsoleChess.csproj": {}
   },
   "projects": {
-    "/Users/julianmosi/Dokumente/Schule/4.Klasse/POS/Projects/ConsoleChess/ConsoleChess/ConsoleChess.csproj": {
+    "D:\\Schule\\4.Klasse\\POS\\Project2\\ConsoleChess\\ConsoleChess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/julianmosi/Dokumente/Schule/4.Klasse/POS/Projects/ConsoleChess/ConsoleChess/ConsoleChess.csproj",
+        "projectUniqueName": "D:\\Schule\\4.Klasse\\POS\\Project2\\ConsoleChess\\ConsoleChess.csproj",
         "projectName": "ConsoleChess",
-        "projectPath": "/Users/julianmosi/Dokumente/Schule/4.Klasse/POS/Projects/ConsoleChess/ConsoleChess/ConsoleChess.csproj",
-        "packagesPath": "/Users/julianmosi/.nuget/packages/",
-        "outputPath": "/Users/julianmosi/Dokumente/Schule/4.Klasse/POS/Projects/ConsoleChess/ConsoleChess/obj/",
+        "projectPath": "D:\\Schule\\4.Klasse\\POS\\Project2\\ConsoleChess\\ConsoleChess.csproj",
+        "packagesPath": "C:\\Users\\User.000\\.nuget\\packages\\",
+        "outputPath": "D:\\Schule\\4.Klasse\\POS\\Project2\\ConsoleChess\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/Users/julianmosi/.config/NuGet/NuGet.Config"
+          "C:\\Users\\User.000\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -37,7 +44,6 @@
         "netcoreapp2.1": {
           "dependencies": {
             "Microsoft.NETCore.App": {
-              "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
@@ -48,16 +54,10 @@
             }
           },
           "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
+            "net461"
           ],
           "assetTargetFallback": true,
-          "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+          "warn": true
         }
       }
     }
