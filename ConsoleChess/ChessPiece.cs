@@ -6,7 +6,7 @@ namespace ConsoleChess
 {
     abstract class ChessPiece
     {
-        public int X { get; set; }
+        public string X { get; set; }
 
         public int Y { get; set; }
         public string ShortName => $"{(IsWhite ? "w" : "s")}{Term}";

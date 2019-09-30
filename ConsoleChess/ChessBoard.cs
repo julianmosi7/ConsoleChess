@@ -8,7 +8,56 @@ namespace ConsoleChess
     class ChessBoard
     {
         static int fields;
-        private List<ChessPiece> chessPiece = new List<ChessPiece>();
+        private List<ChessPiece> chessPiece = new List<ChessPiece>
+        {
+            //white
+            new Rook(true){X = "a", Y = 1},
+            new Rook(true){X = "h", Y = 1},
+
+            new Knight(true){X = "b", Y = 1},
+            new Knight(true){X = "g", Y = 1},
+
+            new Bishop(true){X = "c", Y = 1},
+            new Bishop(true){X = "f", Y = 1},
+
+            new Queen(true){X = "d", Y = 1},            
+
+            new King(true){X = "e", Y = 1},           
+           
+            new Pawn(true){X = "a", Y = 2},
+            new Pawn(true){X = "b", Y = 2},
+            new Pawn(true){X = "c", Y = 2},
+            new Pawn(true){X = "d", Y = 2},
+            new Pawn(true){X = "e", Y = 2},
+            new Pawn(true){X = "f", Y = 2},
+            new Pawn(true){X = "g", Y = 2},
+            new Pawn(true){X = "h", Y = 2},
+
+            //black
+            new Rook(false){X = "a", Y = 8},
+            new Rook(false){X = "h", Y = 8},
+
+            new Knight(false){X = "b", Y = 8},
+            new Knight(false){X = "g", Y = 8},
+
+            new Bishop(false){X = "c", Y = 8},
+            new Bishop(false){X = "f", Y = 8},
+
+            new Queen(false){X = "d", Y = 8},
+
+            new King(false){X = "e", Y = 8},
+
+            new Pawn(false){X = "a", Y = 7},
+            new Pawn(false){X = "b", Y = 7},
+            new Pawn(false){X = "c", Y = 7},
+            new Pawn(false){X = "d", Y = 7},
+            new Pawn(false){X = "e", Y = 7},
+            new Pawn(false){X = "f", Y = 7},
+            new Pawn(false){X = "g", Y = 7},
+            new Pawn(false){X = "h", Y = 7},
+
+        };
+        
         //store all ChessPieces and show them
         public void Show()
         {
@@ -27,6 +76,7 @@ namespace ConsoleChess
             Console.Write(" ");
             blacktogrey.WriteLine("-----------------------------------------");
             Console.WriteLine("   a    b    c    d    e    f    g    h");
+            //in dieser klasse methode mit, zielfeld leer oder nicht, auf Startfeld Figur, ...
         }
     }
 }
