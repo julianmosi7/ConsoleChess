@@ -12,17 +12,20 @@ namespace ConsoleChess
         {
             //black
             new Rook(false){X = "a", Y = 8},
-            new Rook(false){X = "h", Y = 8},
 
             new Knight(false){X = "b", Y = 8},
-            new Knight(false){X = "g", Y = 8},
 
             new Bishop(false){X = "c", Y = 8},
-            new Bishop(false){X = "f", Y = 8},
 
             new Queen(false){X = "d", Y = 8},
 
             new King(false){X = "e", Y = 8},
+
+            new Bishop(false){X = "f", Y = 8},
+
+            new Knight(false){X = "g", Y = 8},
+
+            new Rook(false){X = "h", Y = 8},
 
             new Pawn(false){X = "a", Y = 7},
             new Pawn(false){X = "b", Y = 7},
@@ -34,19 +37,6 @@ namespace ConsoleChess
             new Pawn(false){X = "h", Y = 7},
 
             //white
-            new Rook(true){X = "a", Y = 1},
-            new Rook(true){X = "h", Y = 1},
-
-            new Knight(true){X = "b", Y = 1},
-            new Knight(true){X = "g", Y = 1},
-
-            new Bishop(true){X = "c", Y = 1},
-            new Bishop(true){X = "f", Y = 1},
-
-            new Queen(true){X = "d", Y = 1},            
-
-            new King(true){X = "e", Y = 1},           
-           
             new Pawn(true){X = "a", Y = 2},
             new Pawn(true){X = "b", Y = 2},
             new Pawn(true){X = "c", Y = 2},
@@ -54,7 +44,23 @@ namespace ConsoleChess
             new Pawn(true){X = "e", Y = 2},
             new Pawn(true){X = "f", Y = 2},
             new Pawn(true){X = "g", Y = 2},
-            new Pawn(true){X = "h", Y = 2}
+            new Pawn(true){X = "h", Y = 2},
+
+            new Rook(true){X = "a", Y = 1},
+
+            new Knight(true){X = "b", Y = 1},            
+
+            new Bishop(true){X = "c", Y = 1},            
+
+            new Queen(true){X = "d", Y = 1},            
+
+            new King(true){X = "e", Y = 1},
+
+            new Bishop(true){X = "f", Y = 1},
+
+            new Knight(true){X = "g", Y = 1},
+
+            new Rook(true){X = "h", Y = 1},           
             
         };        
         
@@ -81,6 +87,7 @@ namespace ConsoleChess
 
         public void ShowPieces()
         {
+            ColorWriter blacktowhite = new ColorWriter() { ForeGroundColor = ConsoleColor.Black, BackGroundColor = ConsoleColor.White };
             int left;
             int top;
             left = Console.CursorLeft;
@@ -89,17 +96,28 @@ namespace ConsoleChess
             //13, 15
             int position_left = 3;
             int position_top = 1;
-            foreach (var chessPiece in chessPieces)
+            foreach (ChessPiece chessPiece1 in chessPieces)
             {
+                Console.WriteLine(chessPiece1.ToString());
+            }
+
+            foreach (ChessPiece chessPiece in chessPieces)
+            {                
                 for (int i = 0; i < 2; i++)
                 {
                     for (int k = 0; k < 2; k++)
                     {
                         for (int j = 0; j < 8; j++)
-                        {
+                        { 
                             Console.SetCursorPosition(position_left, position_top);
                             //if ob weiß oder black und dann entsprechende color setzen
-                            Console.Write(chessPiece.ShortName);
+                            if (chessPiece.IsWhite.Equals(true))
+                            {
+                                blacktowhite.Write(chessPiece.ShortName);
+                            }else if (chessPiece.IsWhite.Equals(false))
+                            {
+                                Console.Write(chessPiece.ShortName);
+                            }                            
                             position_left += 5;
                         }
                         position_top += 2;
